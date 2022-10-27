@@ -7,7 +7,6 @@ const timer = (seconds) =>  {
     return new Promise(res => setTimeout(res, time))
 }
 
-
 async function doSomething() {
     const commands = [
         'xdotool mousemove 600 800',
@@ -15,7 +14,7 @@ async function doSomething() {
     ];
 
     for (var i = 0; i < TIMES; i++) {
-    console.log("Looping... " + i);
+    console.log(i + " Looping...");
     
     let x = 0
     
